@@ -12,7 +12,62 @@
             <h1 style="color:rgb(46, 20, 216)">Estudio sobre la desigualdad entre hombres y mujeres en el mundo del cine.</h2>
         </div>
 
-        <div style=" margin: 3% 0 2% 0">
+        <div class="introduccion" style="margin:5% 15% 0 5%">
+            <h2 style="color:rgb(209, 126, 70)">Introducción</h2>
+            
+            Existen algunas profesiones, como las relacionadas con el mundo audiovisual, que por su exposición al público ofrecen visibilidad sobre la trayectoria de las personas que la ejercen, 
+            permitiendo así que sus <b>carreras puedan ser trazadas de forma fiable</b>, un ejemplo son las vidas laborales de los actores y actrices. <br />
+            A través de diversas <b>plataformas que recopilan datos sobre películas</b> (como el país de realización del film, los/las actores/actrices que participan en él, 
+            el nombre del director/a, los presupuestos y numerosas características más), es posible trazar qué <b>tipo de patrón sigue el desarrollo profesional de un actor/actriz</b>, 
+            teniendo en cuenta a qué edad comenzó a trabajar, cuál es la edad en la que ha protagonizado más películas, qué tipos de papeles ha interpretado y qué relevancia han ido 
+            teniendo estos conforme el/la actor/actriz ha ido ampliando su experiencia, así como cuál es el patrón que sigue la relación experiencia con respecto a la relevancia de los papeles, 
+            o el tipo de papeles que han obtenido a determinadas edades, la frecuencia de trabajos realizados, etc... <br />
+            <br />
+            Se pretende estudiar es si los patrones de las vidas profesionales de actores y actrices son diferentes en función del sexo. <br />
+            Se quieren llevar a cabo <b>comparativas</b> , como, por ejemplo, ver si el patrón cambia en caso de que el largometraje 
+            sea dirigido por un hombre o por una mujer o si en diferentes países/culturas dicho patrón se comporta de forma diferente 
+            (por ejemplo, podría ser que en el cine de Bollywood las actrices fueran especialmente jóvenes con respecto a otras industrias cinematográficas por el requerimiento de una mayor agilidad para el baile). <br>
+            Se quiere conocer las <b>relaciones entre personajes</b> y como cambian con la edad. <br />
+            También queremos saber qué tipo de <b>personajes</b> interpretan actores y actrices <b>según su edad y si siguen los mismos patrones</b>: por ejemplo, si a partir de los 30 años los personajes femeninos son mayoritariamente madres,
+            sería de esperar que a la misma edad, aproximadamente, los personajes masculinos sean padres.   
+        </div>
+
+        <div class="introduccion" style="margin:5% 15% 0 5%">
+            <h2 style="color:rgb(209, 126, 70)">Aspectos técnicos de la cración del dataset</h2>
+            Los datos de películas para este estudio se han extraido de <a href="https://www.themoviedb.org/" target="_blank"> The Movie Database (TMDB):  https://www.themoviedb.org/ </a>. <br />
+            Se ha creado un dataset con las 300 películas más votadas de cada año. Se acota el estudio a películas estrenadas entre 1970 y 2021. (así que nuestra muestra será de aproximadamente 15.300 películas).<br />
+            Los datos extraidos de TMDB se guardan en una base de datos NoSQL basada en grafos, en este caso la <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/graph/graph-introduction"  target="_blank">API de Gremlin de Azure Cosmos DB</a>.  <br />
+
+            <a href="https://github.com/isabelcabezasm/TFM" target="_blank">Consulta el código de la aplicación ETL en este repositorio de Gibhub.</a><br /> <br/> 
+            Los gráficos que ilustran este estudio están realizados con <a href="https://powerbi.microsoft.com/en-us/" target="_blank" >Microsoft Power BI.</a>
+
+        </div>
+
+        <div class="exploracion" style="margin:5% 15% 0 5%">
+            <h2 style="color:rgb(209, 126, 70)">Exploración inicial del dataset</h2>            
+
+            En el siguiente diagrama podemos ver una <b>representación gráfica de la base de datos NoSQL orientada a grafo</b> que se ha creado para este estudio. 
+            En este caso sólo se representan películas y actores, pero podemos interactuar con él para ver qué actores o actrices comparten las películas "Little Women", "Don't look up", "Dune", "Call me by your name" y "Spider-man" <br />
+            <br />
+            Además vamos que la mayoría de películas de nuestra muestra (un 49.21%) son estadounidenses. Porcentaje seguido de muy lejos por un 8.98% de películas francesas. <br />
+            Se considerarán solo géneros femenino y masculino, ya que aunque algunas personas se identifican como "No binario", en este caso el porcentaje es demasiado pequeño para poder sacar estadisticas o conclusiones fiables. <br />
+    
+        
+            <iframe title="Grafos" 
+                    width="1024" 
+                    height="804" 
+                    src="https://app.powerbi.com/view?r=eyJrIjoiODIwOWJhNjUtYzUzZC00Yjg0LWE5NzYtZjViMjljYzAzZGI2IiwidCI6IjQ3NTUwM2IwLTM1NGQtNGUzMC1hNWY2LTZjZjVkYTYyNzM5ZSIsImMiOjh9" 
+                    frameborder="0" 
+                    allowFullScreen="true"></iframe>
+            
+            <br/>
+
+          
+        </div>
+
+
+
+        <div style=" margin: 3% 0 2% 5%">
             <h2 style="color:rgb(209, 126, 70)">Esperanza de vida laboral de hombres y mujeres.</h2>
             <iframe 
                 title="v3" 
@@ -23,7 +78,7 @@
         </div>
 
 
-        <div style=" margin: 3% 0 2% 0">
+        <div style=" margin: 3% 0 2% 5%">
             <h2 style="color:rgb(209, 126, 70)">Características de los personajes según su sexo.</h2>
             <iframe title="Roles según su sexo" 
                     width="1024" height="804" 
@@ -33,7 +88,7 @@
             </iframe>
         </div>
 
-        <div style=" margin: 3% 0 2% 0">
+        <div style=" margin: 3% 0 2% 5%">
             <h2 style="color:rgb(209, 126, 70)">Descripción de los personajes según su sexo y edad.</h2>
             <iframe title="Roles según sexo y edad " 
                     width="1024" height="804" 
