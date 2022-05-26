@@ -12,8 +12,24 @@
             <h1 style="color:rgb(46, 20, 216)">Estudio sobre la desigualdad entre hombres y mujeres en el mundo del cine.</h2>
         </div>
 
+        <div class="indice" style="margin:5% 15% 0 5%">
+            <h2 style="color:rgb(209, 126, 70)">Índice</h2>
+            <ul class="lista" style="list-style: outside none none !important;">
+                <li><a href="#introduccion">1. Introducción </a></li>
+                <li><a href="#creacion">2. Aspectos técnicos de la creación del dataset </a></li>
+                <li><a href="#exploracion">3. Exploración inicial del dataset</a></li>
+                <li><a href="#patron">4. Patrones en la vida laboral de hombres y mujeres.</a></li>
+                
+            </ul>
+
+
+            
+
+
+        </div>
+
         <div class="introduccion" style="margin:5% 15% 0 5%">
-            <h2 style="color:rgb(209, 126, 70)">Introducción</h2>
+            <h2 id="introduccion" style="color:rgb(209, 126, 70)">1. Introducción</h2>
             
             Existen algunas profesiones, como las relacionadas con el mundo audiovisual, que por su exposición al público ofrecen visibilidad sobre la trayectoria de las personas que la ejercen, 
             permitiendo así que sus <b>carreras puedan ser trazadas de forma fiable</b>, un ejemplo son las vidas laborales de los actores y actrices. <br />
@@ -33,7 +49,7 @@
         </div>
 
         <div class="introduccion" style="margin:5% 15% 0 5%">
-            <h2 style="color:rgb(209, 126, 70)">Aspectos técnicos de la cración del dataset</h2>
+            <h2 id="creacion" style="color:rgb(209, 126, 70)">2. Aspectos técnicos de la creación del dataset</h2>
             Los datos de películas para este estudio se han extraido de <a href="https://www.themoviedb.org/" target="_blank"> The Movie Database (TMDB):  https://www.themoviedb.org/ </a>. <br />
             Se ha creado un dataset con las 300 películas más votadas de cada año. Se acota el estudio a películas estrenadas entre 1970 y 2021. (así que nuestra muestra será de aproximadamente 15.300 películas).<br />
             Los datos extraidos de TMDB se guardan en una base de datos NoSQL basada en grafos, en este caso la <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/graph/graph-introduction"  target="_blank">API de Gremlin de Azure Cosmos DB</a>.  <br />
@@ -44,7 +60,7 @@
         </div>
 
         <div class="exploracion" style="margin:5% 15% 0 5%">
-            <h2 style="color:rgb(209, 126, 70)">Exploración inicial del dataset</h2>            
+            <h2 id="exploracion" style="color:rgb(209, 126, 70)">3. Exploración inicial del dataset</h2>            
 
             En el siguiente diagrama podemos ver una <b>representación gráfica de la base de datos NoSQL orientada a grafo</b> que se ha creado para este estudio. 
             En este caso sólo se representan películas y actores, pero podemos interactuar con él para ver qué actores o actrices comparten las películas "Little Women", "Don't look up", "Dune", "Call me by your name" y "Spider-man" <br />
@@ -70,9 +86,11 @@
 
 
         <div style=" margin: 3% 15% 2% 5%">
-            <h2 style="color:rgb(209, 126, 70)">Esperanza de vida laboral de hombres y mujeres.</h2>
+            <h2 id= "patron" style="color:rgb(209, 126, 70)">4. Patrones en la vida laboral de hombres y mujeres.</h2>
+            
+            <h3>Toda la muestra</h3>
 
-            <h3>Todo el casting</h3>
+            <h4>Todo el casting</h4>
 
             Para comenzar, decidimos analizar la vida laboral de los/las artistas sin distinción del tipo de papeles que desempeñan en las películas. (Gráfico 2 - Página 1- gráfica de arriba "Actors and Actresses age (whole cast)") <br />
             En una primera búsqueda, considerando el <b>reparto al completo </b> de los filmes, obtenemos el siguiente resultado:  <br />
@@ -89,7 +107,7 @@
             Aunque esta diferencia de edad disminuye entre los 55 y los 80, seguimos encontrando un gran predominio de papeles interpretados por hombres hasta el final de la vida artística 
             (sobre los 86 años, que obviamente son papeles ya MUY esporádicos).<br />
 
-            <h3>Considerando sólo los protagonistas</h3>
+            <h4>Considerando sólo los protagonistas</h4>
             Encontramos un patrón casi idéntico a la hora de describir las edades que tienen los protagonistas de las películas. <br />
             En concreto, en este caso, antes de los 27 encontramos más mujeres protagonistas (en el rango de edad entre 15 y 27), pero después la industria del cine se centra en protagonistas hombres.<br />
             En el caso de los protagonistas <b>la diferencia entre el número de mujeres y hombres a partir de los 27 es mucho más acentuada</b> que si comparamos con todo el casting (se observa la diferencia entre las lineas azul y morada del gráfico de arriba y de abajo). <br />
