@@ -1,0 +1,21 @@
+.presentacion {
+    border-bottom: 1px dotted blueviolet; 
+    padding-top: 1% ;
+}
+
+.titulo {
+    color:rgb(46, 20, 216);
+}
+
+.naranja {
+    color:rgb(209, 126, 70);
+}
+
+.violeta {
+    color: rgb(155,38,182);
+}
+
+.celeste {
+    color:#028DFF;
+    margin-top: 10%;
+}
