@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css" /> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <title>Study on Gender Inequality Between Men and Women in the Film Industry</title>
+    </head>
+    <body>
+        <div class="presentacion">      
+            <h1 class="titulo">Master's Thesis Project</h1>
+            <h2>Isabel Cabezas Martin</h2>
+            <h3 class="titulo">University Master's Degree in Data Science from UOC</h3>
+        </div>
+        <div class="presentacion"> 
+            <h1 class="violeta">Study on Gender Inequality Between Men and Women in the Film Industry</h2>
+        </div>
+
+        <div style="text-align: center; margin: 2% 0;">
+            <p><strong>Idioma / Language:</strong> 
+            <a href="caracteristicas.html" style="color: #007bff;">Español</a> | 
+            <a href="caracteristicas_en.html" style="color: #333; font-weight: bold;">English</a></p>
+        </div>
+
+        <div class="indice" style="margin:5% 15% 0 5%">
+            <h2 class="naranja">Index</h2>
+            <ul class="lista" style="list-style: outside none none !important;">
+                <li><a href="index_en.html#introduccion">1. Introduction</a></li>
+                <li><a href="index_en.html#creacion">2. Technical Aspects of Dataset Creation</a></li>
+                <li><a href="index_en.html#exploracion">3. Initial Dataset Exploration</a></li>
+                <li><a href="patronesedad_en.html#patron">4. Patterns in the Working Lives of Actors and Actresses</a></li>
+                    <ul style="list-style: outside none none !important;">
+                        <li><a href="patronesedad_en.html#todo">4.1. Entire Sample</a></li>
+                        <li><a href="patronesedad_en.html#todo">4.2. Comparison by Countries</a></li>
+                        <li><a href="patronesedad_en.html#todo">4.3. Comparison by Popularity</a></li>
+                        <li><a href="patronesedad_en.html#todo">4.4. Comparison by Film Genre</a></li>
+                        <li><a href="patronesedad_en.html#todo">4.5. Comparison by Director's Gender</a></li>
+                    </ul>
+                <li><a href="caracteristicas_en.html#caracteristicas">5. Character Characteristics by Gender</a></li>
+                <li><a href="roles_en.html#caractertisticas">6. Character Description by Gender and Age</a></li>
+                    <ul style="list-style: outside none none !important;">
+                        <li><a href="roles_en.html#todo">6.1. Entire Sample. Words Used for Women and Men</a></li>
+                        <li><a href="roles_en.html#fisicoycaracter">6.2. Physical Description vs. Character Comparison</a></li>
+                        <li><a href="roles_en.html#profesiones">6.3. Professions vs. Family Comparison</a></li>
+                        <li><a href="roles_en.html#saludmental">6.4. Mental Health</a></li>
+                        <li><a href="roles_en.html#conclusiones">6.5. Conclusions</a></li>
+                    </ul>
+                
+            </ul>         
+        </div>
+      
+
+
+
+        <div style=" margin: 3% 0 2% 5%">
+            <h2 id="caracteristicas" class="naranja">5. Character Characteristics by Gender</h2>
+            
+            This interactive chart (Chart 7) allows selecting (at the bottom) the name with which a character is being described (girl/boy, daughter/son...) 
+            and establishing a visual comparison between the different adjectives. <br />
+            Additionally, it also offers the option to compare data according to context. With the help of a slider I can select a specific period of years and analyze what happens at different moments. <br /><br />
+            It can be seen that for example between the years 1970 and 1999, there were 10 single mothers and 6 divorced. While between 2000 and 2021 the number of single mothers has reached 23, <b>adapting to a new
+            reality of single-parent families</b>, and divorced mothers cease to have so much prominence: we only have 3 in this period. <br />
+            This contrasts with the fact that for the first period (1970-1999) no one talked about single fathers and there were three divorced, but in the second stage three single fathers already appear and no divorced father. <br />
+            In absolute figures we find <b>many more mothers than fathers</b>, but the presence of these roles is widely analyzed in section <a href="roles_en.html#profesiones">6.3. Professions vs. Family Comparison.</a>
+            of the following section. <br /><br />
+            As a brief review we see contrasts in other family members in the two time periods we are analyzing - the first between the 70s and 1999 - and the second between 2000 and 2021. <br/> 
+            For example, the number of <b>grandmothers</b> has decreased (from 10 to 3) and moreover before they were more <b>sweet, maternal or compassionate</b>, and more recently we have sick and alcoholic grandmothers.<br />
+            <br /><br />
+            In general there are 20% more brothers than sisters (normal if we consider that the majority of the cast are men as we have seen previously), 
+            but the three most repeated adjectives in both cases and in the same order in terms of number of appearances are the same for both genders: young, older, small. 
+            Although we do find adjectives for sisters, which as we will see in section <a href="roles_en.html#fisicoycaracter">6.2. Physical Description vs. Character Comparison.</a> and 
+            <a href="roles_en.html#saludmental">6.4. Mental Health.</a> apply much more to women, such as sexy, beautiful, disabled, depressed, etc... <br />
+            And the same happens with boys, with adjectives like successful, hardworking, ambitious or aggressive. <br />
+
+            <p>
+            <iframe title="Character Characteristics by Gender" 
+                    width="1024" height="804" 
+                    src="https://app.powerbi.com/view?r=eyJrIjoiMTNhNzA5NmMtOTA0Mi00NDI5LWI0MTMtYTQ0OTYyOGI1NDYxIiwidCI6IjQ3NTUwM2IwLTM1NGQtNGUzMC1hNWY2LTZjZjVkYTYyNzM5ZSIsImMiOjh9"
+                    frameborder="0" 
+                    allowFullScreen="true">
+            </iframe>
+            </p>
+            Chart 7. <br />  <br />
+
+            Although the technique that has been used to search for this set of adjectives is different from the one that has been used in the following section <br />
+            (here specific words have been searched that refer to women such as <i>mother</i>, <i>grandmother</i>, <i>aunt</i>, <i>sister</i>, <i>girlfriend</i> and the same with men - using the corresponding masculine forms and 
+            in the following section the search has focused on the character name that appears in the synopsis) <br />
+            it is observed that the adjectives and their types for women and men coincide in this section and in the following one. <br />
+            <b>Women</b> are described with adjectives that <b>describe their physical appearance</b> more than their character, we also find more women defined through a <b>relationship with a man</b> (mother of a son, daughter of a father, etc...) and
+            other adjectives that are the same as those of <b>gender roles</b> (sweet, beloved, wonderful, silent, etc...) <br />
+            For their part, <b>men</b> are described less in terms of physical appearance and more in terms of their <b>character</b> (mysterious, kind, coercive, angry, etc...), there are fewer fathers, sons, grandfathers, and also coincide 
+            <b>more aggressive adjectives</b> (alcoholic, angry, abusive...).
+
+
+            
+            <div class="paginasiguiente">
+                <a href="roles_en.html">Next section:  <b>6. Character Description by Gender and Age.</b> >> </a> 
+            </div>
+
+
+        </div>
+
+
+
+        <div class="paginasiguiente">
+            Thanks <a href="https://www.linkedin.com/in/everabanos/">Eva</a>, for all your help.
+        </div>
+
+        
+    </body>
+</html>
