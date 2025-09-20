@@ -5,40 +5,40 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-        <title> Estudio sobre la desigualdad entre hombres y mujeres en el mundo del cine.</title>
+        <title>Study on Gender Inequality Between Men and Women in the Film Industry</title>
     </head>
     <body>
         <div class="presentacion">      
-            <h1 class="titulo">Proyecto Fin de Master</h1>
+            <h1 class="titulo">Master's Thesis Project</h1>
             <h2>Isabel Cabezas Martin</h2>
-            <h3 class="titulo">Master Universitario Ciencia de datos de la UOC</h3>
+            <h3 class="titulo">University Master's Degree in Data Science from UOC</h3>
         </div>
         <div class="presentacion"> 
-            <h1 class="violeta">Estudio sobre la desigualdad entre hombres y mujeres en el mundo del cine.</h2>
+            <h1 class="violeta">Study on Gender Inequality Between Men and Women in the Film Industry</h2>
         </div>
 
         <div class="indice" style="margin:5% 15% 0 5%">
-            <h2 class="naranja">Índice</h2>
+            <h2 class="naranja">Index</h2>
             <ul class="lista" style="list-style: outside none none !important;">
-                <li><a href="index.html#introduccion">1. Introducción </a></li>
-                <li><a href="index.html#creacion">2. Aspectos técnicos de la creación del dataset </a></li>
-                <li><a href="index.html#exploracion">3. Exploración inicial del dataset</a></li>
-                <li><a href="patronesedad.html#patron">4. Patrones en la vida laboral de actores y actrices</a></li>
+                <li><a href="index.html#introduccion">1. Introduction</a></li>
+                <li><a href="index.html#creacion">2. Technical Aspects of Dataset Creation</a></li>
+                <li><a href="index.html#exploracion">3. Initial Dataset Exploration</a></li>
+                <li><a href="patronesedad.html#patron">4. Patterns in the Working Lives of Actors and Actresses</a></li>
                     <ul style="list-style: outside none none !important;">
-                        <li><a href="patronesedad.html#todo">4.1. Toda la muestra</a></li>
-                        <li><a href="patronesedad.html#todo">4.2. Comparativa por países</a></li>
-                        <li><a href="patronesedad.html#todo">4.3. Comparativa por popularidad</a></li>
-                        <li><a href="patronesedad.html#todo">4.4. Comparativa por género cinematográfico</a></li>
-                        <li><a href="patronesedad.html#todo">4.5. Comparativa por género del director</a></li>
+                        <li><a href="patronesedad.html#todo">4.1. Entire Sample</a></li>
+                        <li><a href="patronesedad.html#todo">4.2. Comparison by Countries</a></li>
+                        <li><a href="patronesedad.html#todo">4.3. Comparison by Popularity</a></li>
+                        <li><a href="patronesedad.html#todo">4.4. Comparison by Film Genre</a></li>
+                        <li><a href="patronesedad.html#todo">4.5. Comparison by Director's Gender</a></li>
                     </ul>                
-                <li><a href="caracteristicas.html#caracteristicas">5. Características de los personajes según su género</a></li>
-                <li><a href="roles.html#caractertisticas">6. Descripción de los personajes según su género y edad</a></li>
+                <li><a href="caracteristicas.html#caracteristicas">5. Character Characteristics by Gender</a></li>
+                <li><a href="roles.html#caractertisticas">6. Character Description by Gender and Age</a></li>
                     <ul style="list-style: outside none none !important;">
-                        <li><a href="roles.html#todo">6.1. Toda la muestra. Palabras usadas para mujeres y hombres</a></li>
-                        <li><a href="roles.html#fisicoycaracter">6.2. Comparativa de descripción física vs. caracter</a></li>
-                        <li><a href="roles.html#profesiones">6.3. Comparativa de profesiones vs familia.</a></li>
-                        <li><a href="roles.html#saludmental">6.4. Salud mental</a></li>
-                        <li><a href="roles.html#conclusiones">6.5. Conclusiones</a></li>
+                        <li><a href="roles.html#todo">6.1. Entire Sample. Words Used for Women and Men</a></li>
+                        <li><a href="roles.html#fisicoycaracter">6.2. Physical Description vs. Character Comparison</a></li>
+                        <li><a href="roles.html#profesiones">6.3. Professions vs. Family Comparison</a></li>
+                        <li><a href="roles.html#saludmental">6.4. Mental Health</a></li>
+                        <li><a href="roles.html#conclusiones">6.5. Conclusions</a></li>
                     </ul>
             </ul>
 
@@ -49,48 +49,48 @@
         </div>
 
         <div class="introduccion" style="margin:5% 15% 0 5%">
-            <h2 id="introduccion" class="naranja">1. Introducción</h2>
+            <h2 id="introduccion" class="naranja">1. Introduction</h2>
             
-            Existen algunas profesiones, como las relacionadas con el mundo audiovisual, que por su exposición al público ofrecen visibilidad sobre la trayectoria de las personas que la ejercen, 
-            permitiendo así que sus <b>carreras puedan ser trazadas de forma fiable</b>, un ejemplo son las vidas laborales de los actores y actrices. <br />
-            A través de diversas <b>plataformas que recopilan datos sobre películas</b> (como el país de realización del film, los/las actores/actrices que participan en él, 
-            el nombre del director/a, los presupuestos y numerosas características más), es posible trazar qué <b>tipo de patrón sigue el desarrollo profesional de un actor/actriz</b>, 
-            teniendo en cuenta a qué edad comenzó a trabajar, cuál es la edad en la que ha protagonizado más películas, qué tipos de papeles ha interpretado y qué relevancia han ido 
-            teniendo estos conforme el/la actor/actriz ha ido ampliando su experiencia, así como cuál es el patrón que sigue la relación experiencia con respecto a la relevancia de los papeles, 
-            o el tipo de papeles que han obtenido a determinadas edades, la frecuencia de trabajos realizados, etc... <br />
+            There are some professions, such as those related to the audiovisual world, that due to their public exposure offer visibility into the trajectory of the people who practice them, 
+            thus allowing their <b>careers to be traced reliably</b>, an example being the working lives of actors and actresses. <br />
+            Through various <b>platforms that compile data about films</b> (such as the country where the film was made, the actors/actresses who participate in it, 
+            the name of the director, budgets and numerous other characteristics), it is possible to trace what <b>type of pattern an actor/actress's professional development follows</b>, 
+            considering at what age they started working, what age they starred in the most films, what types of roles they have played and what relevance they have had 
+            as the actor/actress has expanded their experience, as well as what pattern the relationship between experience and role relevance follows, 
+            or the type of roles they have obtained at certain ages, the frequency of work performed, etc... <br />
             <br />
-            <h4>Objetivos</h4>
-            Se pretende estudiar si los patrones de las vidas profesionales de actores y actrices son diferentes en función del género. <br />
-            Se quieren llevar a cabo <b>comparativas</b> , como, por ejemplo, ver si el patrón cambia en caso de que el largometraje 
-            sea dirigido por un hombre o por una mujer o si en diferentes países/culturas dicho patrón se comporta de forma diferente 
-            (por ejemplo, podría ser que en el cine de Bollywood las actrices fueran especialmente jóvenes con respecto a otras industrias cinematográficas por el requerimiento de una mayor agilidad para el baile). <br>
-            Se quieren conocer las <b>relaciones entre personajes</b> y como cambian con la edad. <br />
-            A través de este estudio, también se propone determinar qué tipo de <b>personajes</b> interpretan actores y actrices <b>según su edad y si siguen los mismos patrones</b>: por ejemplo, si a partir de los 30 años los personajes femeninos son mayoritariamente madres,
-            sería de esperar que a la misma edad, aproximadamente, los personajes masculinos sean padres.   
+            <h4>Objectives</h4>
+            The aim is to study whether the patterns of actors' and actresses' professional lives are different based on gender. <br />
+            <b>Comparisons</b> are intended to be carried out, such as, for example, seeing if the pattern changes in case the feature film 
+            is directed by a man or a woman or if in different countries/cultures this pattern behaves differently 
+            (for example, it could be that in Bollywood cinema actresses are especially young compared to other film industries due to the requirement for greater agility for dancing). <br>
+            The aim is to understand the <b>relationships between characters</b> and how they change with age. <br />
+            Through this study, it is also proposed to determine what type of <b>characters</b> actors and actresses play <b>according to their age and whether they follow the same patterns</b>: for example, if from age 30 female characters are mostly mothers,
+            it would be expected that at the same age, approximately, male characters are fathers.   
         </div>
 
         <div class="introduccion" style="margin:5% 15% 0 5%">
-            <h2 id="creacion" class="naranja">2. Aspectos técnicos de la creación del dataset</h2>
-            Los datos de películas para este estudio se han extraido de <a href="https://www.themoviedb.org/" target="_blank"> The Movie Database (TMDB):  https://www.themoviedb.org/ </a>. <br />
-            Se ha creado un dataset con las 300 películas más votadas de cada año. Se acota el estudio a películas estrenadas entre 1970 y 2021. (así que nuestra muestra será de aproximadamente 15.300 películas).<br />
-            Los datos extraidos de TMDB se guardan en una base de datos NoSQL basada en grafos, en este caso la <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/graph/graph-introduction"  target="_blank">API de Gremlin de Azure Cosmos DB</a>.  <br />
+            <h2 id="creacion" class="naranja">2. Technical Aspects of Dataset Creation</h2>
+            The film data for this study has been extracted from <a href="https://www.themoviedb.org/" target="_blank"> The Movie Database (TMDB):  https://www.themoviedb.org/ </a>. <br />
+            A dataset has been created with the 300 most voted films of each year. The study is limited to films released between 1970 and 2021. (so our sample will be approximately 15,300 films).<br />
+            The data extracted from TMDB is stored in a graph-based NoSQL database, in this case the <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/graph/graph-introduction"  target="_blank">Azure Cosmos DB Gremlin API</a>.  <br />
 
-            <a href="https://github.com/isabelcabezasm/TFM" target="_blank">Consulta el código de la aplicación ETL en este repositorio de Gibhub.</a><br /> <br/> 
-            Los gráficos que ilustran este estudio están realizados con <a href="https://powerbi.microsoft.com/en-us/" target="_blank" >Microsoft Power BI.</a>
+            <a href="https://github.com/isabelcabezasm/TFM" target="_blank">Check the ETL application code in this GitHub repository.</a><br /> <br/> 
+            The charts that illustrate this study are made with <a href="https://powerbi.microsoft.com/en-us/" target="_blank" >Microsoft Power BI.</a>
 
         </div>
 
         <div class="exploracion" style="margin:5% 15% 0 5%">
-            <h2 id="exploracion" class="naranja">3. Exploración inicial del dataset</h2>            
+            <h2 id="exploracion" class="naranja">3. Initial Dataset Exploration</h2>            
 
-            En el siguiente diagrama podemos ver una <b>representación gráfica de la base de datos NoSQL orientada a grafo</b> que se ha creado para este estudio. 
-            En este caso sólo se representan películas y actores, pero podemos interactuar con él para ver qué actores o actrices comparten las películas "Little Women", "Don't look up", "Dune", "Call me by your name" y "Spider-man" <br />
+            In the following diagram we can see a <b>graphical representation of the graph-oriented NoSQL database</b> that has been created for this study. 
+            In this case only films and actors are represented, but we can interact with it to see which actors or actresses share the films "Little Women", "Don't look up", "Dune", "Call me by your name" and "Spider-man" <br />
             <br />
-            Además vamos que la mayoría de películas de nuestra muestra (un 49.21%) son estadounidenses. Porcentaje seguido de muy lejos por un 8.98% de películas francesas. <br />
-            Se considerarán solo géneros femenino y masculino, ya que aunque algunas personas se identifican como "No binario", en este caso el porcentaje es demasiado pequeño para poder sacar estadisticas o conclusiones fiables. <br />
+            We also see that the majority of films in our sample (49.21%) are American. This percentage is followed by far by 8.98% of French films. <br />
+            Only female and male genders will be considered, since although some people identify as "Non-binary", in this case the percentage is too small to be able to draw reliable statistics or conclusions. <br />
     
             <p>
-            <iframe title="Grafos" 
+            <iframe title="Graphs" 
                     width="1024" 
                     height="804" 
                     src="https://app.powerbi.com/view?r=eyJrIjoiODIwOWJhNjUtYzUzZC00Yjg0LWE5NzYtZjViMjljYzAzZGI2IiwidCI6IjQ3NTUwM2IwLTM1NGQtNGUzMC1hNWY2LTZjZjVkYTYyNzM5ZSIsImMiOjh9" 
@@ -98,11 +98,11 @@
                     allowFullScreen="true">
             </iframe>
             </p>
-            Gráfico 1.
+            Chart 1.
             
             
             <div class="paginasiguiente">
-            <a href="patronesedad.html#patron">Siguiente apartado:  <b>4. Patrones en la vida laboral de actores y actrices</b>. >> </a> 
+            <a href="patronesedad.html#patron">Next section:  <b>4. Patterns in the Working Lives of Actors and Actresses</b>. >> </a> 
             </div>
           
         </div>
