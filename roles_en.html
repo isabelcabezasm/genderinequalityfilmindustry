@@ -1,0 +1,406 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css" /> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <title> Estudio sobre la desigualdad entre hombres y mujeres en el mundo del cine.</title>
+    </head>
+    <body>
+        <div class="presentacion">      
+            <h1 class="titulo">Proyecto Fin de Master</h1>
+            <h2>Isabel Cabezas Martin</h2>
+            <h3 class="titulo">Master Universitario Ciencia de datos de la UOC</h3>
+        </div>
+        <div class="presentacion" > 
+            <h1 class="violeta">Estudio sobre la desigualdad entre hombres y mujeres en el mundo del cine.</h2>
+        </div>
+
+        <div class="indice" style="margin:5% 15% 0 5%">
+            <h2 class="naranja">Índice</h2>
+            <ul class="lista" style="list-style: outside none none !important;">
+                <li><a href="index.html#introduccion">1. Introducción </a></li>
+                <li><a href="index.html#creacion">2. Aspectos técnicos de la creación del dataset </a></li>
+                <li><a href="index.html#exploracion">3. Exploración inicial del dataset</a></li>
+                <li><a href="patronesedad.html#patron">4. Patrones en la vida laboral de actores y actrices.</a></li>
+                    <ul style="list-style: outside none none !important;">
+                        <li><a href="patronesedad.html#todo">4.1. Toda la muestra</a></li>
+                        <li><a href="patronesedad.html#todo">4.2. Comparativa por países</a></li>
+                        <li><a href="patronesedad.html#todo">4.3. Comparativa por popularidad</a></li>
+                        <li><a href="patronesedad.html#todo">4.4. Comparativa por género cinematográfico</a></li>
+                        <li><a href="patronesedad.html#todo">4.5. Comparativa por género del director</a></li>
+                    </ul>
+                <li><a href="caracteristicas.html#caracteristicas">5. Características de los personajes según su género</a></li>
+                <li><a href="roles.html#caractertisticas">6. Descripción de los personajes según su género y edad</a></li>
+                    <ul style="list-style: outside none none !important;">
+                        <li><a href="roles.html#todo">6.1. Toda la muestra. Palabras usadas para mujeres y hombres</a></li>
+                        <li><a href="roles.html#fisicoycaracter">6.2. Comparativa de descripción física vs. caracter</a></li>
+                        <li><a href="roles.html#profesiones">6.3. Comparativa de profesiones vs familia</a></li>
+                        <li><a href="roles.html#saludmental">6.4. Salud mental</a></li>
+                        <li><a href="roles.html#conclusiones">6.5. Conclusiones</a></li>
+                    </ul>
+
+                
+            </ul>         
+        </div>      
+
+
+
+        <div style=" margin: 3% 15% 2% 5%">
+            <h2 class="naranja">6. Descripción de los personajes según su género y edad.</h2>
+            Como se comentaba en la sección anterior, al buscar el rol y las palabras que describen a un personaje a partir de su nombre, 
+            se encuentran resultados parecidos si el personaje se correspondía con un hombre o con una mujer.     <br>
+            Tras la búsqueda, se descubre que las palabras más utilizadas y que más se repiten para describir a los personajes interpretados por mujeres son: “beautiful”, “wife”, “young”, “girlfriend”, “sexy”, “woman”, “mother”. <br />
+            Todas ellas son descripciones que hacen referencia básicamente a su aspecto físico o rol en la película, un rol que en la mayoría de ocasiones está expresado además en relación a un personaje masculino. <br /> <br />
+
+            Para los personajes interpretados por hombres he encontrado, sin embargo, un espectro diferente de adjetivos y nombres, desde “young” y “old” (referidos a su aspecto físico), 
+            hasta “policeman”, “convict”, “evil”, “friend”, “british”, “mysterious”, “legendary”, “private”, “student” o “artist”. <br /><br />
+
+            Como se evidencia, en el caso de los actores, los adjetivos no solo se relacionan con su aspecto físico, como sucede en el caso de las mujeres tal y como muestran los resultados obtenidos 
+            con la búsqueda de las actrices, sino que para los hombres se habla también de sus profesiones (policeman, convict, student, artist...) o se describe su personalidad (evil, mysterious, legendary, private).
+            Dejando a un lado las profesiones, a las que se les dedica un apartado en exclusiva, se analiza ahora a qué edades se emplean estos adjetivos tan repetidos.  <br /> <br />
+            Nota: Se omite el adjetivo “old”, ya que se ha observado que en la mayoría de ocasiones su uso no describía a un personaje, sino que formaba parte de la construcción inglesa “years old”, 
+            utilizada para expresar los años de una persona.
+
+
+            <h3 class="celeste" id="todo" style="margin-top: 20px">6.1. Toda la muestra.</h3>   
+
+            <br /><br />
+
+            Se han elegido las palabras más utilizadas para referirse a personajes femeninos. Se encuentran seis: 
+            <ul>
+                <li>Beautiful</li>
+                <li>Girlfriend</li>
+                <li>Mother</li>
+                <li>Sexy</li>
+                <li>Wife</li>
+                <li>Young</li>
+            </ul>
+
+            Como puede desprenderse de estos adjetivos y nombres, los personajes interpretados por mujeres son siempre las “esposas”, las “novias” o las “madres” de alguien. No existen como ente único, sino en relación a otro. <br />
+            Por si esta subordinación no fuera suficiente, se observa que además los adjetivos que más abundan en los resultados de la búsqueda son “guapa”, “sexy” y “jóven”, 
+            descripciones físicas que cosifican a la mujer hablando simplemente de su cuerpo y belleza.  <br /><br />
+
+            Se estudia el gráfico 10, en la gráfica titulada "Main general words user for women", donde se muestra la relación entre los adjetivos de los personajes y la edad de las actrices que representaron ese personaje.
+            Se puede ver que <b>más allá de los 38 años</b> (puntos naranjas y rosas) no encontramos mujeres calificadas como "guapas", ni "sexys", ni por supuesto jóvenes. <br>
+            <b>No encontramos ningún otro tipo de adjetivo para ellas</b>, ni bueno, ni malo. <br>
+            A partir de esa edad, se vuelven 'invisibles' y  los personajes interpretados son "madres" o "esposas": su rol pasa a basarse en una relación (en este caso familiar) con otra persona. <br>
+
+            Además, los resultados muestran la cara más tradicional de la sociedad,  donde la mayoría de novias están en una franja de edad de entre 20 y 30 años. Unas compañeras que, a partir de una edad de 30 o 33 años, pasarán a ser esposas (salvo alguna excepción).
+
+            <br /><br />
+            Otro dato que se puede observar a través del año en el que se lanza determinada película, es que los roles de género que se describen no han cambiado demasiado con el paso del tiempo. <br />
+            La única excepción es con respecto a las esposas, que antes del año 2000 no podían pasar de la cuarentena y en los últimos años parece que es posible encontrar ya personajes de más de 45 años 
+            (véase en el gráfico el vacío que queda en el margen inferior a la derecha). <br />
+
+            Tras proceder al mismo análisis, para estudiar el caso de los actores, observo que las palabras que más aparecen para describir los papeles interpretados por los hombres son otras muy 
+            distintas a las que reciben las mujeres. Ellos, además de jóvenes, también pueden ser “mysterious” (misteriosos)  o “legendary” (legendarios). <br />
+            
+            Ejemplo de los cuatro adjetivos más obtenidos:
+            <ul>
+                <li>Evil</li>
+                <li>Legendary</li>
+                <li>Mysterious</li>
+                <li>Young</li>
+            </ul>
+
+
+            Es momento de analizar las <b>similitudes y diferencias</b>. <br>
+
+            En ambos casos se encuentran que las sinopsis describen a muchos personajes como “young” (jóvenes), sin embargo, hay claras diferencias: Mientras que la mujer más mayor, 
+            calificada como “joven”, tiene 36 años, este patrón no parece aplicarse de igual modo a los hombres, ya que ellos son “jóvenes” hasta los 
+            43 (incluso la búsqueda me muestra un par de outliers con 66 y 76). Es decir, que un hombre es joven hasta los 43 años y una mujer solo se considera joven hasta los 36). <br /><br />
+            
+            Nota: En la película <a href="https://www.themoviedb.org/movie/49494-the-eagle" target="_blank">The Eagle (2011)</a> aparecen Marcus Aquila (hijo) y el padre (Aquila), 
+            intepretado por <a href="https://www.themoviedb.org/person/55636-donald-sutherland" target="_blank">Donald Sutherland</a> a los 76. 
+            Como ambos personajes tienen el mismo apellido, el algoritmo le ha puesto el "joven" a Aquila padre, cuando en la sinopsis se refería a Aquila hijo. <br>
+            Lo mismo ocurre en Men in Black 3, donde se le atribuye erroneamente el adjetivo "joven" al actor Tommy Lee Jones que hace del agente K viejo, cuando el joven agente K 
+            es interpretado por <a href="https://www.themoviedb.org/person/16851-josh-brolin">Josh Brolin</a>. <br> <br>
+            
+            <br />
+            Como se ha explicado en la primera mitad de este trabajo, en el cine los <b>actores tienen una carrera más extensa que las actrices</b>. De hecho, aunque también vemos que a partir del 
+            2000 hay un incremento en la edad de los actores al igual que ocurre con las actrices, el espacio vacío que se observa en la gráfica a partir de los 50 años en las mujeres no existe en el caso de los hombres. <br>
+
+            Otra de las diferencias es que los hombres que aparecen en las películas no son descritos en las sinopsis a partir de su consanguinidad o en relación con otra persona, tal y como sucede con las mujeres. <br> 
+            Es decir, hay más "madres de", "novias de", "esposas de"...  que sus homólogos masculinos. <br> <br> <br> 
+            
+            <p> 
+            <i> Las mujeres sólo aparecen para completar la historia de un actor protagonista mientras que ellos son un ente per se.</i> <br> 
+            <a href="https://www.casadellibro.com/libro-el-papel-de-las-mujeres-en-el-cine/9788414108390/9025498">El Papel de las Mujeres en el Cine. Pilar Aguilar</a> <br>
+            </p><br> <br> 
+
+            Las palabras que más frecuentemente describen a los hombres en las sinopsis no son “marido”, ni “novio”, ni “hijo”, como en el caso de las mujeres, sino otras referidas a su profesión o su personalidad.<br>
+
+            Centrándose lo que concierne a su aspecto, tampoco los hombres son descritos con adjetivos que se refieran a su físico. Por lo que se deduce que los hombres se 
+            escapan pues de la cosificación y son más que un cuerpo. Ellos pueden ser misteriosos, malignos o legendarios...<br>
+
+            Gracias al mapa de colores que me muestra el gráfico, se ve que mientras las actrices son “beautiful”, “sexy”, y “young” en la primera fase de sus carreras, 
+            después (aproximadamente a partir de los 40) pasan a ser solo “wife” o “mother”.<br>
+
+            Sin embargo, los hombres son principalmente “young” al inicio de sus carreras, para después convertirse en “legendary” o “mysterious”. <br>
+
+            En definitiva, se puede ver claramente que ambos géneros no evolucionan con la edad de la misma forma:<br /> <br />
+
+            <p>
+            <iframe title="Roles según género y edad " 
+                    width="1024" height="804" 
+                    src="https://app.powerbi.com/view?r=eyJrIjoiYjhmZDE0ZjMtY2Y0Ni00Y2Y1LTlhNzUtNzUzNDUyMTQ2M2NhIiwidCI6IjQ3NTUwM2IwLTM1NGQtNGUzMC1hNWY2LTZjZjVkYTYyNzM5ZSIsImMiOjh9" 
+                    frameborder="0" 
+                    allowFullScreen="true">
+            </iframe>
+            </p>
+
+            Gráfico 8. Adjetivos que definen a personajes femeninos y masculinos en orden de decreciente en cuanto al número de veces que se han encontrado en el análisis.
+        
+            <br /> <br />
+            En las siguientes secciones se a analiza de forma pormenorizada algunos grupos de adjetivos que describen a personajes masculinos y femeninos de forma diferente. <br>
+            
+            Se centrarán en adjetivos/nombres/roles que describen a los personajes:
+            <ul>
+                <li>físicamente</li>
+                <li>carácter o psicológicamente </li>
+                <li>profesiones </li>
+                <li>familia </li>
+                <li>enfermedades mentales </li>
+            </ul>
+
+
+
+
+            <h3 class="celeste" id="fisicoycaracter">6.2. Comparativa de descripción física vs. caracter .</h3>
+            Lo primero que llama la atención de las sinopsis de las películas es que en la <b>descripción física de las mujeres</b>, los adjetivos que se utilizan se reducen a tres: “attractive”, “beautiful” y ”sexy”. <br>
+            Y además, al ver la línea de las edades, otro detalle que sorprende es que la última mujer descrita con estos adjetivos en las sinopsis ronda los 38 años.<br>
+            Personalmente, considero que se nos está enviando un claro mensaje: la valía física o el atractivo de las mujeres está íntimamente relacionado con la juventud. 
+            Y fuera de esta edad, el atractivo de una mujer desaparece. <br> 
+            Dicho con otras palabras, una vez que la mujer ha envejecido, ya no hay nada que mirar.<br>
+
+            Voy a observar ahora el mismo gráfico pero con los datos obtenidos por los personajes masculinos. Resulta curioso que en su caso <b>apenas aparecen adjetivos sobre el aspecto físico que describan a los hombres</b>. <br>
+            Tal y como refleja el resultado del gráfico, frente a 42 mujeres “beautiful” que teníamos en el anterior ejemplo, aquí solo aparecen cinco hombres “handsome”.  <br>
+            Se podría haber encontrado otro tipo de adjetivos para ellos (altos, fuertes, feos...), pero no. El caso es que en el caso de los hombres, las cualidades físicas referidas en las sinopsis brillan por su ausencia. 
+            Ni un solo “strong”, “gorgeous”, “tall”, “ugly” o algún rasgo físico que describa al personaje. Nada. Un dato no menos que curioso también. <br>
+
+            Tan difícil era representar esta gráfica que incluso se han añadido adjetivos como “black” (a pesar de encajar dudosamente en la descripción física) o “drifter” (vagabundo), 
+            que a pesar de ser una condición general más que física, la he incluído porque describía la forma en la que va vestida la persona. <br>
+
+            Aparece una <b>conclusión</b> clara, que <b>el físico de los hombres está mucho menos escrutado, descrito y juzgado que el de las mujeres</b>.
+
+            <br><br>
+            <p> 
+            Cita: 
+            Secundarias pero guapas 
+            <i>Si lo pensamos, nos daremos cuenta de que el cine nos tiene acostumbrados y acostumbradas a que las principales figuras femeninas sean guapas según los cánones más tradicionales: jóvenes, delgadas, pecho abundante, cintura estrecha, generosas caderas, ojos grandes, labios carnosos, hermosas cabelleras... 
+            Sin embargo, los protagonistas masculinos no están sometidos a tan feroz tiranía. Ellos pueden ser bastante mayores (mucho más que ellas) o pueden no ser espectacularmente guapos pero gustarnos, ¿por qué? Porque el atractivo en el cine se fabrica apelando fundamentalmente a dos caminos. 
+            Uno es el de la identificación/proyección. Este se da con el protagonista. Lo encontramos atractivo porque es el personaje que encarna la acción y vive la aventura.</i>
+            (Aguilar Carrasco, 2017)
+            </p>
+            <br><br>
+
+            Después de haber analizado las diferencias que aparecen en las sinopsis de las películas respecto a las referencias sobre el aspecto físico de 
+            hombres y mujeres, le toca el turno ahora al tratamiento del <b>carácter y personalidad</b> de unos y otros. <br>
+
+            Al estudiar los datos se ve que si bien el cuerpo de las mujeres puede ser observado, descrito y de esta forma analizado de una forma simplona, 
+            que se reduce a la utilización reiterada de tres adjetivos relacionados con la belleza (beautiful, sexy y attractive), 
+            con respecto a la descripción de su carácter afortunadamente la búsqueda aporta más resultados. <br>
+            Sin embargo, observando a continuación el tipo de adjetivos que aparecen, lo que parecía una suerte, acaba siendo lo contrario, pues todos ellos vienen a referirse a dos tipos de mujer: <br>
+
+            Así, aunque no son tan numerosos, en esta ocasión encontramos bastantes adjetivos como “sensitive” y “shy” (dos veces cada una), “manipulative”, “hedonistic”, “vulnerable” y “lonely” (una cada una). <br> 
+            <i>(Estos últimos adjetivos se ha decidido no reflejarlos en la gráfica para no añadirle innecesaria complejidad y complicar su lectura al sobrecargarla).</i> <br>
+
+
+            Después de estos resultados, me acuerdo entonces de la gran investigadora, ensayista, profesora y crítica de cine y televisión, Pilar Aguilar Carrasco. 
+            Y es que tal y como menciona la escritora en su obra “El papel de las mujeres en el cine” (Aguilar Carrasco, 2017), es cierto que <b>las mujeres se encuentran 
+            encasilladas</b> en la industria del séptimo arte básicamente <b>en dos papeles</b>: <br> 
+            <ul>
+            <li>por un lado, el de <b>chicas jóvenes y monas</b> (son precisamente los adjetivos  físicos que me han destacado las sinopsis analizadas en este trabajo).  Estas chicas son también dulces, calladas, rendidas y sumisas ante los chicos. 
+            O dicho de otro modo,  son todas atentas, queridas, calladas, dulces y simpáticas ( y todos estos son  adjetivos que se han encontrado en las sinopsis refiriéndose al carácter).  <br>
+            </li>
+            <li>
+            El <b>otro papel en el que están encasilladas</b> las mujeres es en el de desagradables, manipuladoras y embusteras. En los resultados de la búsqueda que hice, aparecían adjetivos como evil y mysterious pero solo en personajes que hablaban de mujeres de 40 años en adelante.
+            </li>
+            </ul>
+    
+            Si se echa un vistazo a los <b>hombres</b>, vemos que ellos tienen muchos <b>más matices</b> en las descripciones de su <b>personalidad</b>. 
+            Tras realizar la búsqueda de adjetivos de las sinopsis referidos a su personalidad encontré los resultados que se muestran en el gráfico 9, en los diagramas de abajo (los referidos a los hombres). <br>
+            En él puede observarse que mientras que del físico de los hombres no se habla más allá de aquellos dos "handsome", los resúmenes de las películas se deshacen en todo tipo de descripciones sobre el carácter y la personalidad de los personajes masculinos. <br>
+
+            Si bien choca que haya muchos más hombres malos (evil), es curioso que aparezcan adjetivos tan distintos a los de las mujeres. En este caso, ellos son “leader”, “legendary” y “notorious”, bien mirado, a mi parecer son adjetivos clave para conocer las diferencias entre los papeles femeninos y masculinos.  <br>
+            
+            Porque <b>ellos</b> son principalmente los <b>aventureros</b>, los que actúan, los <b>líderes</b>, los <b>protagonistas</b>, lo que <b>viven</b> y <b>hacen historia</b>. 
+            Incluso les queda tiempo para ser además graciosos y amantes (comic and lovers). Atención, esto es así, incluso después de los 70 años.
+
+
+
+                <p style="margin-top: 40px">
+                <iframe title="Adjetivos físicos y de personalidad " 
+                        style="margin-top: 40px"
+                        width="1024" height="804" 
+                        src="https://app.powerbi.com/view?r=eyJrIjoiNTNhYmJkYzgtZDU3NC00NGI2LWFkZTYtZTdiZDg3MGNlN2ZlIiwidCI6IjQ3NTUwM2IwLTM1NGQtNGUzMC1hNWY2LTZjZjVkYTYyNzM5ZSIsImMiOjh9" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                </iframe>
+                </p>
+                Gráfico 9. Conjunto de gráficos con adjetivos que describen físicamente y psicológicamente a mujeres y hombres. 
+                
+
+
+            <h3 class="celeste" id="profesiones">6.3. Comparativa de profesiones vs familia.</h3>
+
+            No es nuevo al decir que la sociedad en la que vivimos está marcada por desigualdades, y que también afectan al mercado laboral. 
+            Vivimos en una desigualdad estructural y las mujeres en general estamos en un continuo proceso de empobrecimiento.
+            Porque las mujeres siguen a día de hoy cobrando menos que los hombres. Un factor al que contribuye el hecho de que la <b>población femenina</b> sea la que ocupe los <b>trabajos más precarios</b> en el mercado laboral. <br /><br />
+            
+            Evidentemente, estas desigualdades también se manifiestan en el cine y quedan reflejadas de manera visible. <br>            
+            Como vemos en el gráfico 10, son ellas las que se dedican a <b>trabajos precarios</b>, acordes con los <b>roles de género femeninos</b>. 
+            Encontramos mujeres que se dedican al <b>cuidado y atención</b> de otros, a despachar con clientes como <b>dependientas</b> e incluso al mundo del <b>espectáculo</b> como actrices, cantantes o artistas en general. <br />
+
+            A excepción de alguna profesión como periodismo, que también en la vida real tiene representación femenina, las sinopsis muestran a <b>mujeres con situaciones laborales reiterativas y estereotipadas</b>. <br>
+            Aunque sabemos que existen algunas películas puntuales sobre mujeres profesionalmente exitosas e incluso sobre algunas científicas, efectivamente este tipo de films son marginales y tal representación brilla por su escasez.<br>
+
+            Desde luego no podemos esperar que las películas ayuden a las mujeres a reducir la brecha de género en estudios/profesiones STEM, sino más bien lo contrario: contribuyen a reproducir estereotipos juega en contra de nosotras. <br>
+            <br>
+
+            Pero desde luego, ellos tampoco se escapan de los estereotipos. <br>
+            Después de una búsqueda en las sinopsis para ver qué profesiones son las más representadas en el cine por los actores, me encuentro con que el <b>trabajo</b> por excelencia de ellos es el de <b>policía</b>. 
+            Tal y como se había visto en la gráfica de la sección 6.5. los hombres representados en el cine se dedican en su mayoría a la vigilancia y protección de la ciudadanía. <br>
+            Como puede verse en el gráfico 10, la palabra “policeman” (policía) es la más repetida para describir a un personaje masculino. 
+            Los policías de las películas son en su mayoría fuertes, su trabajo es <b>interesante y arriesgado</b>, deben hacer un esfuerzo físico, son <b>activos</b> y luchan contra el mal aunque también llevan a cabo <b>investigaciones complicadas</b> mostrando también su faceta más intelectual. <br />
+            Y todo esto lo pueden llegar a ejercer incluso cuando tienen más de 70 años.<br> <br>
+
+            Decía antes que la profesión de <b>periodista</b> también aparecía en el caso de las mujeres, aunque era minoritaria. Pero fijándome mejor, me resulta curioso que las <b>mujeres periodistas</b> de las películas 
+            sean “reporter” y ellos en cambio sean “journalist”. Me pregunto, aunque sospecho la respuesta, el porqué de esa diferencia.<br>
+            Pensando rápidamente en algunas diferencias entre la reportera y el periodista. Mientras que el trabajo de ella se desarrolla en la calle, a la intemperie, 
+            exponiéndose al frío y al calor, hablando con la gente y comunicándose con los demás, ellos se quedan en la seriedad de la redacción, se llevan el mérito 
+            de la especialización y las medallas de la popularidad. Además un periodista cobra más que un reportero, por lo que de nuevo se refleja esa brecha salarial, 
+            ahora también en la ficción. <br> 
+            
+            No pretendo que las películas innoven y muestren cánones sociales distintos a los que tenemos en la sociedad, si pretenden reflejar su tiempo, 
+            está claro que los/las directores <b>filmarán las desigualdades sociales</b> en sus películas, la lástima es que no lo hagan <b>desde la denuncia</b> y en su lugar normalicen la <b>situación de injusticia</b>, 
+            ya que tratándolo desde ese prisma no se invita a la reflexión y cuestionamiento de la realidad. 
+            <br> <br> 
+
+
+            Siguiendo con el resto de profesiones masculinas representadas en el cine, según el análisis de las sinopsis, observo en el gráfico que además del trabajo de policía y periodista, 
+            los hombres también desempeñan otros trabajos en la gran pantalla, como el de ser un “<b>expert</b>” (experto) o un “<b>businessman</b>” (hombre de negocios), sin especificar el sector en el que desarrollan su trabajo. 
+            Parece pues que éste no sea importante, quizás porque un experto <b>siempre se ganará el respeto del público</b>, ya que tiene el mérito de dominar una materia sea cual sea ésta.  <br>
+            
+            <br> 
+            Llegados a este punto, me resulta inevitable pensar en las <b>profesiones</b> más representadas por <b>mujeres</b> en el cine según estos datos (dependientas, artistas, cuidadoras) y cuán 
+            <b>diferentes</b> son de las que son representadas por <b>ellos</b> (policías, hombres de negocios, expertos). 
+
+            <br>
+            Otra de las profesiones que también interpretan a menudo los actores en las películas es la de “lawyer” (abogado). No es de extrañar, teniendo en cuenta que es un trabajo con muchísimo glamour en USA. <br> 
+
+            Si el análisis hasta aquí ya me llevaba a concluir que según se les representa por sus papeles, el cine muestra <b>evidentes diferencias sociales entre hombres y mujeres</b>, 
+            el nuevo dato que averigüo a continuación reafirma mi teoría de la precariedad en la que se ven inmersas las mujeres: <br>
+            Y es que según las películas, en un foco en general, <b>ellos</b> son los que mayoritariamente <b>trabajan</b>: tenemos <u> 64 mujeres con una profesión versus 181 hombres</u>, casi el triple (¡de los cuales 89 son policías!). 
+            <br> <br> 
+
+
+            Cita: 
+            <i>Por otro lado, en el cine, cuando se habla de mujeres, muchas de ellas no son un personaje completo en sí mismo, sino que siempre dependen de un personaje masculino para identificarse. 
+            Vemos que las mujeres siempre son “la chica de él” o “la madre de él” o la “hermana de él”. <br>
+            Cuando la mujer aparece en la película lo hace solo en el momento en el que tiene que ocurrir algo relacionado con ella por tratarse de ser la novia del protagonista o de alguien 
+            (suele tratarse de un capítulo erótico-amoroso, algo que vuelve a relacionar a la mujer con su aspecto físico y su cosificación).  <br>
+
+            También puede aparecer cuando representa a la madre de él. Su figura no tiene mayor relevancia dentro del film y se caracteriza al personaje como una mujer tradicional, cuidadora, protectora y pasiva. 
+            Las madres que aparecen en las películas, más que reflejar nuestro mundo, parece que muestren el que vivían nuestras madres o abuelas hace años. Esto sucede así incluso en los films más recientes y modernos, 
+            que serán modernos en las formas, pero siguen siendo conservadores en el fondo, ya que las mujeres que aparecen en ellos no tienen identidad propia, se definen como la novia, esposa, madre, hermana de, son amas de casa o si trabajan tienen puestos precarios.
+            </i>
+            (Extraído parcialmente de “El papel de las mujeres en el cine”, de Pilar Aguilar Carrasco, 2017)
+            <br> <br> 
+
+            Así pues en el cine, visto lo visto, parece que todavía sigue <b>latente la figura de la mujer</b> tal y como era denunciada por Betty Friedan en el libro “La mística de la feminidad” en los años 60. 
+            Una <b> que podía tener profesión pero que la abandonaba para dedicarse a la familia</b> y pasar a ser la esposa de o la madre de. <br>
+            Las películas muestran a <b>mujeres dependientes de los hombres</b>, tanto <b>económicamente</b> como <b>emocionalmente</b>. Solo existen en base al hombre. <br> 
+
+            Y de este modo, con este tipo de papeles femeninos representados en la gran pantalla, lo único que se consigue es sigamos elaborando propaganda de la mujer, entendida como «esposa-madre-ama de casa» y 
+            <b>se condena</b> a todas aquellas otras <b>que se salen de la norma</b>, pasando a ser “evil”, “manipulative”, etc.<br>
+
+
+            En cuanto al <b>aspecto familiar</b>, por su parte, los <b>hombres</b>, tienen bastantes <b>menos roles</b> relacionados con la <b>parentela</b> o con las relaciones personales.  <br>
+            Se observa que <b>ellos</b> sí <b>tienen una esposa</b>, aunque <b>pocos son calificados como esposos</b>. También pueden <b>tener una hija o hijo</b> pero no aparecen casi como padres. <br>
+            Y <b>ellos tienen novias</b>, pero sólo unos <b>pocos se describen como novios de alguien</b>.<br>
+
+            Recopilando la información obtenida sobre las mujeres y comparando esta con la de los hombres, es evidente que <b>no tiene nada que ver cómo se refleja a los hombres</b> en el cine en relación a su consideración como <b>miembro de la familia a cómo se reflejan las mujeres</b>. <br>
+            En el caso de ellas, estas referencias parecen vitales. 
+            <br><br>
+            Hablando de números absolutos: en el resultado de las búsquedas en las sinopsis de las películas, el resultado de ellas cuadriplica el de ellos. <br>
+            Frente a <u>87 personajes femeninos</u> cuyo <u>rol</u> en la película <u>se establece</u> en base a la <u>relación con otra persona, sólo 22 personajes masculinos</u>.
+            <p style="margin-top: 40px">
+                <iframe title="Roles según género y edad " 
+                        style="margin-top: 40px"
+                        width="1024" height="804" 
+                        src="https://app.powerbi.com/view?r=eyJrIjoiYTY1NGQzNWQtYmVjZS00MzE1LTgxODUtYjM4N2Y0NzM0NDNjIiwidCI6IjQ3NTUwM2IwLTM1NGQtNGUzMC1hNWY2LTZjZjVkYTYyNzM5ZSIsImMiOjh9" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                </iframe>
+            </p>
+                Gráfico 10. Conjunto de gráficos con adjetivos que describen las relaciones familiares y las profesiones de mujeres y hombres. 
+
+        
+            
+
+
+            <h3 class="celeste" id="saludmental">6.4. Salud mental.</h3>
+
+            Al principio de este estudio, no hubiera dicho jamás que acabaría dedicando un apartado para hablar de las enfermedades mentales asociadas a las mujeres y a los hombres que aparecen retratados en la pantalla. 
+            Pero después de los resultados que arrojó la búsqueda de adjetivos referidos a las personalidades de los personajes y encontrar que muchas de las palabras destacadas hablaban sobre enfermedades mentales, 
+            más que dar simples características de la personalidad de todos ellos, vi conveniente crear un punto aparte. <br>
+
+            Tal y como puede observarse en el gráfico 11, el tipo de <b>enfermedades mentales</b> que padecen las <b>mujeres</b> en las películas analizadas en este estudio están relacionadas con la <b>fragilidad</b>. 
+            En este sentido, parece que <b>las mujeres</b> tienden a tener personalidades que terminan en este tipo de enfermedades (depresión, abandono..) con la <b>constante necesidad de que las cuiden y las quieran</b>, aceptándolas y respetándolas como son. <br>
+
+            A partir de los años 70, aparece un movimiento cinematográfico, que se concreta bajo el título de películas como La semilla del diablo y Una mujer bajo la influencia, en el que existe una romantización de las enfermedades mentales de las mujeres.  
+            La película Betty Blue de 1986 mostraba que las mujeres enfermas mentalmente eran elegantes, atractivas, sensuales y ardientes sexualmente hablando. Nada más alejado de la realidad. <br>            
+            Este movimiento de romantización de las enfermedades mentales ha vuelto más fuerte en los últimos años (o quizás nunca se fue), con películas que han sido muy populares, por ejemplo: Melancolía, Cisne negro, El diario de Noa, Inocencia Interrumpida, Hasta el hueso, etc... <br>
+            
+            Si estos films pretendían desestigmatizar los problemas mentales en la sociedad, en verdad han acabado logrando un efecto muy distinto al deseado ya que que nos están vendiendo las enfermedades mentales como algo <i>cool</i>. <br> <br>
+
+            Por otro lado, las enfermedades mentales que se les adjudican a los hombres en el cine son muy diferentes. <br>
+            Tras una búsqueda de adjetivos y nombres en las sinopsis que se refieran a la salud mental de los protagonistas masculinos, se observa que el resultado es completamente distinto al que tuve con las mujeres. <br>
+            En el caso de los <b>hombres</b> , ellos no sufren enfermedades causadas por su fragilidad, sensibilidad o debilidad, sino que sus <b>enfermedades son una forma de justificar su violencia</b>. <br>
+            
+            Así, ellos padecen enfermedades que les hace actuar como “sádicos”, “abusivos”, “alcohólicos”, “depravados”, “obsesivos”, “psicópatas” o “esquizofrénicos”, es decir, <b>ellos actúan de forma abusiva y ellas son las abusadas</b>.  <br><br>
+            
+            A pesar de que he encontrado 25 enfermedades mentales (o parecidos) asociadas a los hombres, es una cifra muy inferior a la que obtuve con respecto a las mujeres. <br>
+            Ellas no solo doblan esa cifra sino que la sobrepasan (he hallado 60 referencias que describen enfermedades mentales de mujeres).           
+            
+
+
+
+                <p> 
+                <iframe title="Roles según género y edad " 
+                        width="1024" height="804" 
+                        style="margin-top: 40px"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiMDZiMTdhMTAtYzA1YS00ZDk2LTkyY2MtOTBiMjMzMjcyN2Y5IiwidCI6IjQ3NTUwM2IwLTM1NGQtNGUzMC1hNWY2LTZjZjVkYTYyNzM5ZSIsImMiOjh9" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                </iframe>
+                </p>
+                Gráfico 12. Dos gráficos con problemas de salud mental para hombres y para mujeres.
+                
+
+
+            <h3 class="celeste" id="conclusiones">6.5. Conclusiones.</h3>
+                <p>
+                <iframe title="Roles según género y edad " 
+                        width="1024" height="804" 
+                        src="https://app.powerbi.com/view?r=eyJrIjoiOWE4ZmQ4ODMtNWZiMi00MzdiLWIzNmEtMmFhMmUwYjhjZTE5IiwidCI6IjQ3NTUwM2IwLTM1NGQtNGUzMC1hNWY2LTZjZjVkYTYyNzM5ZSIsImMiOjh9" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                </iframe>
+                </p>
+                Gráfico 13. Gráficos resumen: Físico vs personalidad  trabajo vs familia y tipos de enfermedades mentales para hombres y mujeres.
+                
+            
+        </div>
+
+        
+
+
+
+
+        
+    </body>
+</html>
